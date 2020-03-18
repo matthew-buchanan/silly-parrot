@@ -1,5 +1,6 @@
+import random
+
 def shuffle(arr1, arr2):
-  import random
   deck = arr1 + arr2
   scram = random.sample(deck, k=len(deck))
   return scram
@@ -27,5 +28,5 @@ if __name__ == '__main__':
     first.append(temp[0])
     deck = temp
   c = Counter(first)
-  print(f'FIRST DRAWS IN {trials} TRIALS:\n', c)
+  print(f'FIRST DRAW IN {trials} TRIALS:\n', c)
 
